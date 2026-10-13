@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cat Lovers Journal</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 32px 20px;
+      background-color: #f5f0e8;
+      color: #665544;
+      font-family: Arial, sans-serif;
+    }
+
+    .journal {
+      width: min(100%, 1100px);
+      margin: 0 auto;
+      padding: 20px;
+      border: 10px solid #8b5e3c;
+    }
+
+    .header-box {
+      min-height: 90px;
+      margin-bottom: 12px;
+      padding: 10px 16px;
+      border: 4px solid #8b5e3c;
+      background-color: #e8d5c4;
+      text-align: right;
+    }
+
+    .header-box h1 {
+      margin: 0;
+      color: #603813;
+      font-size: clamp(1.7rem, 4vw, 2.2rem);
+    }
+
+    .header-box p {
+      margin: 4px 0 0;
+      color: #8b5e3c;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 265px minmax(0, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .friends-box {
+      padding: 10px 16px;
+      border: 4px solid #8b5e3c;
+      background-color: #e8d5c4;
+      font-weight: bold;
+    }
+
+    .friends-box h2 {
+      color: #603813;
+    }
+
+    .friends-box li {
+      margin-bottom: 8px;
+    }
+
+    .journal-content {
+      min-width: 0;
+    }
+
+    .entry-box {
+      margin-bottom: 12px;
+      padding: 12px;
+      border: 4px solid #8b5e3c;
+      background-color: #fff;
+      overflow: auto;
+    }
+
+    .entry-box h3 {
+      margin: 0 0 10px;
+      color: #8b5e3c;
+      font-size: 1.6rem;
+      font-weight: normal;
+      text-decoration: underline dotted;
+      text-underline-offset: 4px;
+    }
+
+    .entry-box p {
+      margin: 10px 0;
+      color: #665544;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .entry-box img {
+      float: right;
+      width: 200px;
+      height: 180px;
+      margin: 0 0 8px 12px;
+      object-fit: contain;
+    }
+
+    .highlight-text {
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 16px 10px;
+      }
+
+      .journal {
+        padding: 12px;
+        border-width: 6px;
+      }
+
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .friends-box {
+        order: 1;
+      }
+
+      .journal-content {
+        order: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .entry-box img {
+        float: none;
+        display: block;
+        width: 100%;
+        max-width: 280px;
+        height: auto;
+        margin: 0 auto 12px;
+      }
+
+      .entry-box p {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="journal">
+    <header class="header-box">
+      <h1>Cat Lovers Journal</h1>
+      <p>A World Full of Cats</p>
+    </header>
+
+    <div class="layout">
+      <aside class="friends-box" aria-labelledby="friends-title">
+        <h2 id="friends-title">My Cat Friends</h2>
+        <ul>
+          <li>Fluffy</li>
+          <li>Brownie</li>
+          <li>Whiskers</li>
+          <li>Snowball</li>
+        </ul>
+      </aside>
+
+      <main class="journal-content">
+        <article class="entry-box">
+          <h3><time datetime="2026-10-12">12/10/26</time>: My Cute Cat</h3>
+
+          <img src="image_515d17e.jpg" alt="A cute cat">
+
+          <p>
+            Yesterday, I spent the whole day playing with my cat.
+            Cats are adorable animals, and I love watching them sleep
+            and play. My favorite thing about cats is their
+            <span class="highlight-text">soft fur and playful nature</span>.
+            They make wonderful pets and bring happiness to our lives.
+          </p>
+        </article>
+
+        <article class="entry-box">
+          <h3><time datetime="2026-10-11">11/10/26</time>: Cats and Their Habits</h3>
+
+          <img src="image_65e6dc9c.jpg" alt="Another cute cat">
+
+          <p>
+            Cats love sleeping, playing with toys, and exploring their
+            surroundings. Some cats enjoy cuddling, while others prefer
+            their own space. I think cats are amazing because they are
+            both independent and loving. Their funny actions always
+            make me smile. Every cat has its own unique personality!
+          </p>
+        </article>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
