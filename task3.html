@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Reservation Form</title>
+</head>
+
+<body style="background-color: grey;">
+
+<h2 style="text-align:center; color:red;">
+Continental Hotel Reservation Form
+</h2>
+
+<form action="post">
+
+<table border="2"  bgcolor="#sky blue" align="center">
+
+<tr>
+<th>Name</th>
+<td><input type="text" name="username" placeholder="Enter your name"></td>
+</tr>
+
+<tr>
+<th>eMail</th>
+<td><input type="email" name="email" value="info@continental.pk"></td>
+</tr>
+
+<tr>
+<th>Mobile No</th>
+<td><input type="text" name="mobile" placeholder="Enter your cell number"></td>
+</tr>
+
+<tr>
+<th>Arrival Time</th>
+<td><input type="text" name="arrival" placeholder="Enter your arrival time"></td>
+</tr>
+
+<tr>
+<th>Departure</th>
+<td><input type="text" name="departure">
+<input type="text" name="time"></td>
+</tr>
+
+<tr>
+<th>Room Type</th>
+<td>
+<input type="radio" name="room">Single
+<input type="radio" name="room">Double
+<br>
+<input type="radio" name="room">Presidential Suite
+</td>
+</tr>
+
+<tr>
+<th>Preferences</th>
+<td>
+<input type="checkbox">Non-Smoking<br>
+<input type="checkbox">Internet<br>
+<input type="checkbox">Firm Mattress
+</td>
+</tr>
+
+<tr>
+<th>Mode of Payment</th>
+<td>
+<input type="checkbox">Cash
+<input type="checkbox">Check<br>
+<input type="checkbox">Credit Card
+
+<select>
+<option>Select Card</option>
+<option>Visa</option>
+<option>MasterCard</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Send Data">
+</td>
+</tr>
+
+</table>
+
+</form>
+</body>
+</html>
